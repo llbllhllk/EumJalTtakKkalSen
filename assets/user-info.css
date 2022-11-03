@@ -46,8 +46,8 @@ button {
   font-size: 56px;
 }
 
-/* Login */
-.login {
+/* Form */
+.form {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,23 +55,23 @@ button {
   background-color: #F2F8FA;
 }
 
-.login__container {
+.form__container {
   text-align: center;
   max-width: 362px;
 }
 
-.login__container h1 {
+.form__container h1 {
   font-size: 40px;
   margin-bottom: 30px;
 }
 
-.login__caption {
+.form__caption {
   margin-top: 18px;
   font-weight: 300;
   color: #7B7B7E;
 }
 
-.login__caption a {
+.form__caption a {
   font-weight: 700;
   color: #3040C4;
 }
