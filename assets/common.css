@@ -42,3 +42,14 @@ button {
   border: 1px solid #7B7B7E;
   transition: all 0.15s ease-out;
 }
+
+/* Header */
+.header__title {
+  text-align: center;
+  height: 128px;
+  line-height: 128px;
+}
+
+.header__title h1 {
+  font-size: 48px;
+}
