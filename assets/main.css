@@ -15,18 +15,22 @@
 .recommand__category {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 1000px;
   border-radius: 12px;
   margin-bottom: 24px;
 }
 
-.recommand__category li {
-  padding: 18px 96.8px;
+.recommand__category label {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 18px 46.8px;
   cursor: pointer;
   border-radius: 12px;
   transition: all 0.15s ease;
 }
 
-.recommand__category li:hover {
+.recommand__category label:hover {
   background-color: #3040C4;
   color: #fff;
 }

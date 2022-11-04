@@ -20,19 +20,34 @@
   <main>
     <div class="container">
       <section class="recommand">
-        <ul class="recommand__category">
-          <li>전체</li>
-          <li>한식</li>
-          <li>중식</li>
-          <li>일식</li>
-          <li>양식</li>
-        </ul>
+        <div class="recommand__category">
+          <div>
+            <input type="radio" name="category" id="all" checked>
+            <label for="all">전체</label>
+          </div>
+          <div>
+            <input type="radio" name="category" id="ko">
+            <label for="ko">한식</label>
+          </div>
+          <div>
+            <input type="radio" name="category" id="ch">
+            <label for="ch">중식</label>
+          </div>
+          <div>
+            <input type="radio" name="category" id="jp">
+            <label for="jp">일식</label>
+          </div>
+          <div>
+            <input type="radio" name="category" id="ws">
+            <label for="ws">양식</label>
+          </div>
+        </div>
         <div class="recommand__result">
           <strong>결과</strong>
         </div>
         <button type="button" class="button__active">메뉴추천</button>
       </section>
-      
+
       <section class="map">
         <button type="button" class="button__active recommand__store-btn">맛집추천</button>
         <div class="map_wrap">
