@@ -4,9 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>EumJalTtakKalSen</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/common.css">
+  <!-- Kakao Map Open API -->
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=27734ae70c547eaf5a8bab7d1c2d6a45&libraries=services"></script>
 </head>
 <body>
-  
+  <header class="header__title">
+    <h1>EumJalTtakKalSen</h1>
+  </header>
+  <main>
+    <section class="recommand">
+      <div class="container">
+        <ul class="recommand__category">
+          <li>전체</li>
+          <li>한식</li>
+          <li>중식</li>
+          <li>일식</li>
+          <li>양식</li>
+        </ul>
+        <div class="recommand__result">
+          <strong></strong>
+        </div>
+        <button type="button" class="button__active">메뉴추천</button>
+      </div>
+    </section>
+    <section class="map">
+      <button type="button__active">맛집추천</button>
+      <div class="map_wrap">
+        <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+        <div id="menu_wrap" class="bg_white">
+          <div class="option">
+            <div>
+              <form onsubmit="searchPlaces(); return false;">
+                키워드 : <input type="text" placeholder="키워드를 입력하세요." id="keyword" size="15"> 
+                <button type="submit">검색하기</button> 
+              </form>
+            </div>
+          </div>
+          <hr>
+          <ul id="placesList"></ul>
+          <div id="pagination"></div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
