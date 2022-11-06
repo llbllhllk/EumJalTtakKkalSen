@@ -53,16 +53,9 @@
 
 /* Map */
 .map {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.recommand__store-btn {
   display: none;
 }
 
-.map_wrap {
+.recommand__store-btn {
   display: none;
 }
