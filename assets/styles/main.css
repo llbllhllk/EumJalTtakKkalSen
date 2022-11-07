@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 48px;
 }
 
 .container {
@@ -18,7 +19,7 @@
   align-items: center;
   width: 1000px;
   border-radius: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 62px;
 }
 
 .recommand__category label {
@@ -44,7 +45,7 @@
   height: 200px;
   border-radius: 12px;
   font-size: 32px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .button__active {
@@ -52,10 +53,7 @@
 }
 
 /* Map */
-.map {
-  display: none;
-}
-
 .recommand__store-btn {
+  transition: display 0.2s ease;
   display: none;
 }
