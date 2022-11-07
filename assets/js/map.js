@@ -1,6 +1,7 @@
 // Element
 const container = document.getElementById('map');
 const recommandStoreBtn = document.querySelector('.recommand__store-btn');
+const recommandList = document.querySelector('.bg_white');
 
 var mapOption = { 
   center: new kakao.maps.LatLng(33.450701, 126.570667),
@@ -43,6 +44,7 @@ function addMarker(position, idx, title, map, marker) {
 recommandStoreBtn.addEventListener('click', searchPlaces);
 
 function searchPlaces() {
+  recommandList.style.display = "block";
   // 장소검색 객체를 통해 키워드로 장소검색을 요청합니다
   ps.keywordSearch(recommandKeyword, placesSearchCB);
 }

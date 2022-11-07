@@ -4,7 +4,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 48px;
+  margin: 48px 0 48px 0;
 }
 
 .container {
@@ -23,7 +23,7 @@
 }
 
 .recommand__category label {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   padding: 18px 46.8px;
   cursor: pointer;
@@ -55,5 +55,9 @@
 /* Map */
 .recommand__store-btn {
   transition: display 0.2s ease;
+  display: none;
+}
+
+.bg_white {
   display: none;
 }

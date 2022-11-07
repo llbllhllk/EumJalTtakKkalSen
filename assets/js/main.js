@@ -10,7 +10,7 @@ const recommandBtn = document.querySelector('.recommand-btn');
 // Keyword
 let recommandKeyword;
 
-const recommandFood = () => {
+const handleRecommandFood = () => {
   const categoryArr = ["ko", "ch", "jp", "ws"];
   const randomCategory = Math.floor(Math.random() * 4);
   const randomMenu = Math.floor(Math.random() * 10);
@@ -28,10 +28,10 @@ const recommandFood = () => {
   }
 }
 
-const clickRecommandBtn = () => {
+const handleRecommandBtn = () => {
   // 맛집 추천 버튼 생성
   recommandStoreBtn.style.display = "block";
-  recommandFood();
+  handleRecommandFood();
 }
 
-recommandBtn.addEventListener('click', clickRecommandBtn);
+recommandBtn.addEventListener('click', handleRecommandBtn);
