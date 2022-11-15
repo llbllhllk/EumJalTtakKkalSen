@@ -1,19 +1,12 @@
+// Element
 const loginBtn = document.querySelector('form button');
 const modal = document.querySelector('.modal');
 const modalBtn = document.querySelector('.modal button');
 
+/* 로그인 오류 관련 모달을 출력하는 기능이다. */
 const handleModal = (text) => {
   modal.style.display = "flex";
   modal.childNodes[1].innerText = text;
-  modalBtn.addEventListener('click', () => {
-    modal.style.display = "none";
-  });
-}
-
-/* 로그인 오류 관련 모달을 출력하는 기능이다. */
-const validEmpty = (userId, userPw) => {
-  modal.style.display = "flex";
-  modal.childNodes[1].innerText = "Please enter your ID or password.";
   modalBtn.addEventListener('click', () => {
     modal.style.display = "none";
   });
