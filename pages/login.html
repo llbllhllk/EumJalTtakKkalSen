@@ -11,8 +11,6 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../assets/styles/common.css">
   <link rel="stylesheet" href="../assets/styles/user-info.css">
-  <!-- JS -->
-  <script src="../assets/js/login.js" defer></script>
 </head>
 <body>
   <header class="header__title">
@@ -22,9 +20,9 @@
     <section class="form">
       <div class="form__container">
         <h1>Login</h1>
-        <form>
+        <form action="../assets/php/login.php" method="POST">
           <input type="text" name="userId" placeholder="Enter your ID">
-          <input type="text" name="userPw" placeholder="Enter your Password">
+          <input type="password" name="userPw" placeholder="Enter your Password">
           <button type="button" class="button__active">Get started</button>
         </form>
         <p class="form__caption">
@@ -40,5 +38,8 @@
     <strong></strong>
     <button type="button">Enter</button>
   </div>
+  <!-- JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="../assets/js/login.js"></script>
 </body>
 </html>
